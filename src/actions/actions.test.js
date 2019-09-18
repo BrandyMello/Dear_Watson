@@ -18,4 +18,16 @@ describe('actions', () => {
     console.log(result)
     expect(result).toEqual(expectedAction);
   });
+
+  it('should have a type of "CLEAR_MESSAGES"', () => {
+    const mockMessages = []
+    const expectedAction = {
+      type: 'CLEAR_MESSAGES',
+      messages: mockMessages
+    }
+
+    const result = clearMessages();
+    console.log(result)
+    expect(result).toEqual(expectedAction);
+  })
 });
