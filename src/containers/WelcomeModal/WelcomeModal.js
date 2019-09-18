@@ -33,8 +33,7 @@ export class WelcomeModal extends Component {
       this.connectToChatBot();
     } else {
       this.setState({ error: 'Please, make sure everything is filled out.' })
-    }
-    
+    } 
   }
 
   connectToChatBot = async () => {
