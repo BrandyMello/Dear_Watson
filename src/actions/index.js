@@ -17,7 +17,6 @@ export const addMessage = (messages, message, isUser) => ({
   messages: [...messages, { message, isUser }]
 });
 
-export const clearMessages = (messages) => ({
-  type: 'CLEAR_MESSAGES',
-  messages
+export const clearMessages = () => ({
+  type: 'CLEAR_MESSAGES' 
 })
