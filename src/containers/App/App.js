@@ -17,6 +17,7 @@ export class App extends Component {
   }
 
   addMessage = (message, isUser) => {
+    console.log(message, isUser)
     const { messages } = this.state;
     this.setState({ messages: [...messages, { message, isUser }]});
   }
